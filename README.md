@@ -2,6 +2,8 @@
 
 //////////////Para inicar la app/////////////
 
+** Descargar modulos de node **
+
 1ª-Activar base de datos (dentro del Cmd):
 	mongod
 	mongo
