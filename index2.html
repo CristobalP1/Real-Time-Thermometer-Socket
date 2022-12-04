@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body style="margin: 20px; padding: 20px; background-color: #E9F7EF ;">
+        <div id="padre"">
+            <div style="justify-content: center;display: flex;">
+                <div id="titulo" style="font-size: 50px">Medidor de Pickup</div>
+            </div>
+            <div id="medidores" style="display: flex; flex-direction: row; justify-content: space-around;margin-top: 30px;">
+                <div id="medidor1" style="padding: 20px; font-size: 20px;">
+                    <div style="padding: 20px; font-weight: 600;">Temperatura de 1°Cooler</div>
+                    <div>
+                        <div style="padding: 4px; display: flex; flex-direction: row;">
+                            <div style="font-size: 18px;margin-right: 8px;">Estado: </div>
+                            <div id="estado1" style="font-weight: 700;"></div>
+                        </div>
+                        <div style="padding: 4px; display: flex; flex-direction: row;">
+                            <div style="font-size: 18px; margin-right: 8px;">Protocolo: </div>
+                            <div id="protocolo1" style="font-weight: 700;"></div>
+                        </div>
+                    </div>
+                    <div style="display: flex; justify-content: center;padding: 15px;">
+                        <div 
+                        style=
+                        "display: flex; 
+                        width: 100px; 
+                        height: 600px; 
+                        flex-direction: column; 
+                        background-color: rgb(255, 255, 255);
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 30px;
+                        border: 5px solid rgb(0, 0, 0);
+                        ">
+                            <div id="ct1" style="background-color: rgb(255, 8, 0); flex: 2; width: 40px;border-radius: 1px; padding: 10px;margin-top: 12px;"></div>
+                            <div id="ct2" style="background-color: rgb(196, 81, 4); flex: 2; width: 40px;padding: 10px;"></div>
+                            <div id="ct3" style="background-color: rgb(117, 115, 19); flex: 2; width: 40px;padding: 10px;"></div>
+                            <div id="ct4" style="background-color: rgb(67, 92, 60); flex: 2; width: 40px;padding: 10px;"></div>
+                            <div id="ct5" style="background-color: rgb(51, 99, 32); flex: 2; width: 40px;padding: 10px;"></div>
+                            <div id="ct6" style="background-color: rgb(33, 43, 29); flex: 2; width: 40px;padding: 10px;"></div>
+                            <div id="ct7" style="background-color: rgb(80, 150, 52); flex: 2; width: 40px;padding: 10px;"></div>
+                            <div id="ct8" style="background-color: rgb(80, 150, 52); flex: 2; width: 40px;padding: 10px;"></div>
+                            <div id="ct9" style="background-color: rgb(80, 150, 52); flex: 2; width: 40px;padding: 10px;"></div>
+                            <div id="ct10" style="background-color: rgb(52, 139, 150); flex: 2; width: 40px;padding: 10px;"></div>
+                            <div style="background-color: rgb(230, 230, 230); flex: 1; width: 70px; border-radius: 20px;text-align: center ;padding: 10px;margin-bottom: 10px;">
+                            <p style="align-items: center; justify-content: center;font-weight: 800;" id="text1"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="medidor2" style="padding: 20px;font-size: 20px">
+                    <div style="padding: 20px;font-weight: 600;">Temperatura de 2°Cooler</div>
+                    <div>
+                        <div style="padding: 4px; display: flex; flex-direction: row;">
+                            <div style="font-size: 18px;margin-right: 8px;">Estado: </div>
+                            <div id="estado2" style="font-weight: 700;"></div>
+                        </div>
+                        <div style="padding: 4px; display: flex; flex-direction: row;">
+                            <div style="font-size: 18px; margin-right: 8px;">Protocolo: </div>
+                            <div id="protocolo2" style="font-weight: 700;"></div>
+                        </div>
+                    </div>
+                    <div style="display: flex; justify-content: center;padding: 15px;">
+                        <div 
+                        style=
+                        "display: flex; 
+                        width: 100px; 
+                        height: 600px; 
+                        flex-direction: column; 
+                        background-color: rgb(255, 255, 255);
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 30px;
+                        border: 5px solid rgb(0, 0, 0);
+                        ">
+                            <div id="ct11" style="background-color: rgb(255, 8, 0); flex: 2; width: 40px;border-radius: 1px; padding: 10px;margin-top: 12px;"></div>
+                            <div id="ct12" style="background-color: rgb(196, 81, 4); flex: 2; width: 40px;padding: 10px;"></div>
+                            <div id="ct13" style="background-color: rgb(117, 115, 19); flex: 2; width: 40px;padding: 10px;"></div>
+                            <div id="ct14" style="background-color: rgb(67, 92, 60); flex: 2; width: 40px;padding: 10px;"></div>
+                            <div id="ct15" style="background-color: rgb(51, 99, 32); flex: 2; width: 40px;padding: 10px;"></div>
+                            <div id="ct16" style="background-color: rgb(33, 43, 29); flex: 2; width: 40px;padding: 10px;"></div>
+                            <div id="ct17" style="background-color: rgb(80, 150, 52); flex: 2; width: 40px;padding: 10px;"></div>
+                            <div id="ct18" style="background-color: rgb(80, 150, 52); flex: 2; width: 40px;padding: 10px;"></div>
+                            <div id="ct19" style="background-color: rgb(80, 150, 52); flex: 2; width: 40px;padding: 10px;"></div>
+                            <div id="ct20" style="background-color: rgb(52, 139, 150); flex: 2; width: 40px;padding: 10px;"></div>
+                            <div  style="background-color: rgb(230, 230, 230); flex: 1; width: 70px; border-radius: 20px;text-align: center ;padding: 10px;margin-bottom: 10px;">
+                            <p style="align-items: center; justify-content: center; font-weight: 800;"id="text2"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+             <div style="display: flex; flex-direction: row; justify-content:space-evenly;padding-top: 40px; align-items: center;">
+                <div style="font-weight: 500; font-size: x-large;">Aforo de personas: </div>
+                <div id="personas" style="font-weight: 500; font-size: x-large;"></div>
+                <div id="estado3" style="font-weight: 600; font-size: x-large;"></div>
+            </div>
+        </div>
+
+            <script src="/socket.io/socket.io.js"></script>
+            <script>
+            const socket = io()
+
+                //dom
+                let tex1 = document.getElementById("text1");
+                let tex2 = document.getElementById("text2");
+                let protocolo1 = document.getElementById("protocolo1");
+                let estado1 = document.getElementById("estado1");
+                let protocolo2 = document.getElementById("protocolo2");
+                let estado2 = document.getElementById("estado2");
+                let ct1 = document.getElementById("ct1");
+                let estado3 = document.getElementById("estado3");
+                let person = document.getElementById("personas");
+
+
+                socket.on('lectura',(data)=>{
+                    console.log(data);
+                    tex1.textContent=data + "°";
+
+                    if (data>=1) {
+                        ct1.style.backgroundColor="#E7E7E7";
+                        ct2.style.backgroundColor="#E7E7E7";
+                        ct3.style.backgroundColor="#E7E7E7";
+                        ct4.style.backgroundColor="#E7E7E7";
+                        ct5.style.backgroundColor="#E7E7E7";
+                        ct6.style.backgroundColor="#E7E7E7";
+                        ct7.style.backgroundColor="#E7E7E7";
+                        ct8.style.backgroundColor="#E7E7E7";
+                        ct9.style.backgroundColor="#E7E7E7";
+                        ct10.style.backgroundColor="#0891BF";
+                        protocolo1.textContent = "Seguir agregando articulos";
+                        estado1.textContent ="Normal"
+                        estado1.style.color = "#0891BF";
+                    }
+                    if (data>=2) {
+                        ct1.style.backgroundColor="#E7E7E7";
+                        ct2.style.backgroundColor="#E7E7E7";
+                        ct3.style.backgroundColor="#E7E7E7";
+                        ct4.style.backgroundColor="#E7E7E7";
+                        ct5.style.backgroundColor="#E7E7E7";
+                        ct6.style.backgroundColor="#E7E7E7";
+                        ct7.style.backgroundColor="#E7E7E7";
+                        ct8.style.backgroundColor="#E7E7E7";
+                        ct9.style.backgroundColor="#0891BF";
+                        ct10.style.backgroundColor="#0891BF";
+                        protocolo1.textContent = "Seguir agregando articulos";
+                        estado1.textContent ="Normal"
+                        estado1.style.color = "#0891BF";
+                    }
+                    if (data>=3) {
+                        ct1.style.backgroundColor="#E7E7E7";
+                        ct2.style.backgroundColor="#E7E7E7";
+                        ct3.style.backgroundColor="#E7E7E7";
+                        ct4.style.backgroundColor="#E7E7E7";
+                        ct5.style.backgroundColor="#E7E7E7";
+                        ct6.style.backgroundColor="#E7E7E7";
+                        ct7.style.backgroundColor="#E7E7E7";
+                        ct8.style.backgroundColor="#0891BF";
+                        ct9.style.backgroundColor="#0891BF";
+                        ct10.style.backgroundColor="#0891BF";
+                        protocolo1.textContent = "Seguir agregando articulos";
+                        estado1.textContent ="Normal"
+                        estado1.style.color = "#0891BF";
+                    }
+                    if (data>=4) {
+                        ct1.style.backgroundColor="#E7E7E7";
+                        ct2.style.backgroundColor="#E7E7E7";
+                        ct3.style.backgroundColor="#E7E7E7";
+                        ct4.style.backgroundColor="#E7E7E7";
+                        ct5.style.backgroundColor="#E7E7E7";
+                        ct6.style.backgroundColor="#E7E7E7";
+                        ct7.style.backgroundColor="#0891BF";
+                        ct8.style.backgroundColor="#0891BF";
+                        ct9.style.backgroundColor="#0891BF";
+                        ct10.style.backgroundColor="#0891BF";
+                        protocolo1.textContent = "Seguir agregando articulos";
+                        estado1.textContent ="Normal"
+                        estado1.style.color = "#0891BF";
+                    }
+                    if (data>=5) {
+                        ct1.style.backgroundColor="#E7E7E7";
+                        ct2.style.backgroundColor="#E7E7E7";
+                        ct3.style.backgroundColor="#E7E7E7";
+                        ct4.style.backgroundColor="#E7E7E7";
+                        ct5.style.backgroundColor="#E7E7E7";
+                        ct6.style.backgroundColor="#0891BF";
+                        ct7.style.backgroundColor="#0891BF";
+                        ct8.style.backgroundColor="#0891BF";
+                        ct9.style.backgroundColor="#0891BF";
+                        ct10.style.backgroundColor="#0891BF";
+                        protocolo1.textContent = "Seguir agregando articulos";
+                        estado1.textContent ="Normal"
+                        estado1.style.color = "#0891BF";
+                    }
+                    if (data>=6) {
+                        ct1.style.backgroundColor="#E7E7E7";
+                        ct2.style.backgroundColor="#E7E7E7";
+                        ct3.style.backgroundColor="#E7E7E7";
+                        ct4.style.backgroundColor="#E7E7E7";
+                        ct5.style.backgroundColor="#0891BF";
+                        ct6.style.backgroundColor="#0891BF";
+                        ct7.style.backgroundColor="#0891BF";
+                        ct8.style.backgroundColor="#0891BF";
+                        ct9.style.backgroundColor="#0891BF";
+                        ct10.style.backgroundColor="#0891BF";
+                        protocolo1.textContent = "Seguir agregando articulos";
+                        estado1.textContent ="Normal"
+                        estado1.style.color = "#0891BF";
+                    }
+                    if (data>=7) {
+                        ct1.style.backgroundColor="#E7E7E7";
+                        ct2.style.backgroundColor="#E7E7E7";
+                        ct3.style.backgroundColor="#E7E7E7";
+                        ct4.style.backgroundColor="#EF973A";
+                        ct5.style.backgroundColor="#EF973A";
+                        ct6.style.backgroundColor="#EF973A";
+                        ct7.style.backgroundColor="#EF973A";
+                        ct8.style.backgroundColor="#EF973A";
+                        ct9.style.backgroundColor="#EF973A";
+                        ct10.style.backgroundColor="#EF973A";
+                        protocolo1.textContent = "Dejar de agregar articulos";
+                        estado1.textContent ="Alerta"
+                        estado1.style.color = "#EF973A";
+                    }
+                    if (data>=8) {
+                        ct1.style.backgroundColor="#E7E7E7";
+                        ct2.style.backgroundColor="#E7E7E7";
+                        ct3.style.backgroundColor="#EF973A";
+                        ct4.style.backgroundColor="#EF973A";
+                        ct5.style.backgroundColor="#EF973A";
+                        ct6.style.backgroundColor="#EF973A";
+                        ct7.style.backgroundColor="#EF973A";
+                        ct8.style.backgroundColor="#EF973A";
+                        ct9.style.backgroundColor="#EF973A";
+                        ct10.style.backgroundColor="#EF973A";
+                        protocolo1.textContent = "Dejar de agregar articulos";
+                        estado1.textContent ="Alerta"
+                        estado1.style.color = "#EF973A";
+                    }
+                    if (data>=9) {
+                        ct1.style.backgroundColor="#E7E7E7";
+                        ct2.style.backgroundColor="#D00606";
+                        ct3.style.backgroundColor="#D00606";
+                        ct4.style.backgroundColor="#D00606";
+                        ct5.style.backgroundColor="#D00606";
+                        ct6.style.backgroundColor="#D00606";
+                        ct7.style.backgroundColor="#D00606";
+                        ct8.style.backgroundColor="#D00606";
+                        ct9.style.backgroundColor="#D00606";
+                        ct10.style.backgroundColor="#D00606";
+                        protocolo1.textContent = "Avisar al jefe de sala 451";
+                        estado1.textContent ="Peligro"
+                        estado1.style.color = "#D00606";
+                    }
+                    if (data>=10) {
+                        ct1.style.backgroundColor="#D00606";
+                        ct2.style.backgroundColor="#D00606";
+                        ct3.style.backgroundColor="#D00606";
+                        ct4.style.backgroundColor="#D00606";
+                        ct5.style.backgroundColor="#D00606";
+                        ct6.style.backgroundColor="#D00606";
+                        ct7.style.backgroundColor="#D00606";
+                        ct8.style.backgroundColor="#D00606";
+                        ct9.style.backgroundColor="#D00606";
+                        ct10.style.backgroundColor="#D00606";
+                        protocolo1.textContent = "Avisar al jefe de sala 451";
+                        estado1.textContent ="Peligro"
+                        estado1.style.color = "#D00606";
+
+                    }
+
+                });
+
+                socket.on('lectura1',(data)=>{
+                    console.log(data);
+                    tex2.textContent=data + "°";
+                    if (data>=1) {
+                        ct11.style.backgroundColor="#E7E7E7";
+                        ct12.style.backgroundColor="#E7E7E7";
+                        ct13.style.backgroundColor="#E7E7E7";
+                        ct14.style.backgroundColor="#E7E7E7";
+                        ct15.style.backgroundColor="#E7E7E7";
+                        ct16.style.backgroundColor="#E7E7E7";
+                        ct17.style.backgroundColor="#E7E7E7";
+                        ct18.style.backgroundColor="#E7E7E7";
+                        ct19.style.backgroundColor="#E7E7E7";
+                        ct20.style.backgroundColor="#0891BF";
+                        protocolo2.textContent = "Seguir agregando articulos";
+                        estado2.textContent ="Normal"
+                        estado2.style.color = "#0891BF";
+                    }
+                    if (data>=2) {
+                        ct11.style.backgroundColor="#E7E7E7";
+                        ct12.style.backgroundColor="#E7E7E7";
+                        ct13.style.backgroundColor="#E7E7E7";
+                        ct14.style.backgroundColor="#E7E7E7";
+                        ct15.style.backgroundColor="#E7E7E7";
+                        ct16.style.backgroundColor="#E7E7E7";
+                        ct17.style.backgroundColor="#E7E7E7";
+                        ct18.style.backgroundColor="#E7E7E7";
+                        ct19.style.backgroundColor="#0891BF";
+                        ct20.style.backgroundColor="#0891BF";
+                        protocolo2.textContent = "Seguir agregando articulos";
+                        estado2.textContent ="Normal"
+                        estado2.style.color = "#0891BF";
+                    }
+                    if (data>=3) {
+                        ct11.style.backgroundColor="#E7E7E7";
+                        ct12.style.backgroundColor="#E7E7E7";
+                        ct13.style.backgroundColor="#E7E7E7";
+                        ct14.style.backgroundColor="#E7E7E7";
+                        ct15.style.backgroundColor="#E7E7E7";
+                        ct16.style.backgroundColor="#E7E7E7";
+                        ct17.style.backgroundColor="#E7E7E7";
+                        ct18.style.backgroundColor="#0891BF";
+                        ct19.style.backgroundColor="#0891BF";
+                        ct20.style.backgroundColor="#0891BF";
+                        protocolo2.textContent = "Seguir agregando articulos";
+                        estado2.textContent ="Normal"
+                        estado2.style.color = "#0891BF";
+                    }
+                    if (data>=4) {
+                        ct11.style.backgroundColor="#E7E7E7";
+                        ct12.style.backgroundColor="#E7E7E7";
+                        ct13.style.backgroundColor="#E7E7E7";
+                        ct14.style.backgroundColor="#E7E7E7";
+                        ct15.style.backgroundColor="#E7E7E7";
+                        ct16.style.backgroundColor="#E7E7E7";
+                        ct17.style.backgroundColor="#0891BF";
+                        ct18.style.backgroundColor="#0891BF";
+                        ct19.style.backgroundColor="#0891BF";
+                        ct20.style.backgroundColor="#0891BF";
+                        protocolo2.textContent = "Seguir agregando articulos";
+                        estado2.textContent ="Normal"
+                        estado2.style.color = "#0891BF";
+                    }
+                    if (data>=5) {
+                        ct11.style.backgroundColor="#E7E7E7";
+                        ct12.style.backgroundColor="#E7E7E7";
+                        ct13.style.backgroundColor="#E7E7E7";
+                        ct14.style.backgroundColor="#E7E7E7";
+                        ct15.style.backgroundColor="#E7E7E7";
+                        ct16.style.backgroundColor="#0891BF";
+                        ct17.style.backgroundColor="#0891BF";
+                        ct18.style.backgroundColor="#0891BF";
+                        ct19.style.backgroundColor="#0891BF";
+                        ct20.style.backgroundColor="#0891BF";
+                        protocolo2.textContent = "Seguir agregando articulos";
+                        estado2.textContent ="Normal"
+                        estado2.style.color = "#0891BF";
+                    }
+                    if (data>=6) {
+                        ct11.style.backgroundColor="#E7E7E7";
+                        ct12.style.backgroundColor="#E7E7E7";
+                        ct13.style.backgroundColor="#E7E7E7";
+                        ct14.style.backgroundColor="#E7E7E7";
+                        ct15.style.backgroundColor="#0891BF";
+                        ct16.style.backgroundColor="#0891BF";
+                        ct17.style.backgroundColor="#0891BF";
+                        ct18.style.backgroundColor="#0891BF";
+                        ct19.style.backgroundColor="#0891BF";
+                        ct20.style.backgroundColor="#0891BF";
+                        protocolo2.textContent = "Seguir agregando articulos";
+                        estado2.textContent ="Normal"
+                        estado2.style.color = "#0891BF";
+                    }
+                    if (data>=7) {
+                        ct11.style.backgroundColor="#E7E7E7";
+                        ct12.style.backgroundColor="#E7E7E7";
+                        ct13.style.backgroundColor="#E7E7E7";
+                        ct14.style.backgroundColor="#EF973A";
+                        ct15.style.backgroundColor="#EF973A";
+                        ct16.style.backgroundColor="#EF973A";
+                        ct17.style.backgroundColor="#EF973A";
+                        ct18.style.backgroundColor="#EF973A";
+                        ct19.style.backgroundColor="#EF973A";
+                        ct20.style.backgroundColor="#EF973A";
+                        protocolo2.textContent = "Dejar de agregar articulos";
+                        estado2.textContent ="Alerta"
+                        estado2.style.color = "#EF973A";
+                    }
+                    if (data>=8) {
+                        ct11.style.backgroundColor="#E7E7E7";
+                        ct12.style.backgroundColor="#E7E7E7";
+                        ct13.style.backgroundColor="#EF973A";
+                        ct14.style.backgroundColor="#EF973A";
+                        ct15.style.backgroundColor="#EF973A";
+                        ct16.style.backgroundColor="#EF973A";
+                        ct17.style.backgroundColor="#EF973A";
+                        ct18.style.backgroundColor="#EF973A";
+                        ct19.style.backgroundColor="#EF973A";
+                        ct20.style.backgroundColor="#EF973A";
+                        protocolo2.textContent = "Dejar de agregar articulos";
+                        estado2.textContent ="Alerta"
+                        estado2.style.color = "#EF973A";
+                    }
+                    if (data>=9) {
+                        ct11.style.backgroundColor="#E7E7E7";
+                        ct12.style.backgroundColor="#D00606";
+                        ct13.style.backgroundColor="#D00606";
+                        ct14.style.backgroundColor="#D00606";
+                        ct15.style.backgroundColor="#D00606";
+                        ct16.style.backgroundColor="#D00606";
+                        ct17.style.backgroundColor="#D00606";
+                        ct18.style.backgroundColor="#D00606";
+                        ct19.style.backgroundColor="#D00606";
+                        ct20.style.backgroundColor="#D00606";
+                        protocolo2.textContent = "Avisar al jefe de sala 451";
+                        estado2.textContent ="Peligro"
+                        estado2.style.color = "#D00606";
+                    if (data>=10) {
+                        ct11.style.backgroundColor="#D00606";
+                        ct12.style.backgroundColor="#D00606";
+                        ct13.style.backgroundColor="#D00606";
+                        ct14.style.backgroundColor="#D00606";
+                        ct15.style.backgroundColor="#D00606";
+                        ct16.style.backgroundColor="#D00606";
+                        ct17.style.backgroundColor="#D00606";
+                        ct18.style.backgroundColor="#D00606";
+                        ct19.style.backgroundColor="#D00606";
+                        ct20.style.backgroundColor="#D00606";
+                        protocolo2.textContent = "Avisar al jefe de sala 451";
+                        estado2.textContent ="Peligro"
+                        estado2.style.color = "#D00606";
+                    }
+
+                }});
+
+                socket.on('lectura2',(data)=>{
+
+                    if(data<=500){
+                        estado3.textContent = "Normal";
+                        estado3.style.color = "#FEB902";
+                        person.textContent = data;
+                    }else{
+                        estado3.textContent = "Alto";
+                        estado3.style.color = "#D30202";
+                        person.textContent = data;
+                    }
+                });
+
+            </script>
+
+    </body>
+</html>
+
